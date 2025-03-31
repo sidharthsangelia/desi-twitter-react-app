@@ -14,7 +14,7 @@ function Posts() {
 export default Posts;
 
 export async function loader() {
-  const response = await fetch("http://localhost:8080/posts");
+  const response = await fetch(" https://desi-twitter-react-app-backend-g7bqj4bab.vercel.app /posts");
   const resData = await response.json();
   return resData.posts;
 }
